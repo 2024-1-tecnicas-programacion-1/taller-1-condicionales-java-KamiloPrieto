@@ -8,10 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- *
- * @author danielsanchez
- */
+
 public class AnnosBisiestosTest {
     @Test
     public void test1988() {
@@ -19,6 +16,11 @@ public class AnnosBisiestosTest {
         String valorActual = AnnosBisiestos.evaluar(1988);
         assertEquals(valorEsperado, valorActual);
     }
+    @Test
+    public void test2011() {
+        String valorEsperado = "2011 no es bisiesto";
+        String valorActual = AnnosBisiestos.evaluar(2011);
+        assertEquals(valorEsperado, valorActual);
+    }
     
-    // TODO: Agrega tus otros casos de prueba aquí
 }
