@@ -8,14 +8,12 @@ import java.util.Scanner;
 public class AnnosBisiestos {
     public static String evaluar(int anno){
         if(anno%4 == 0){
-            System.out.println(anno + " es bisiesto");
+            return anno + " es bisiesto";
         }else if(anno%400 == 0){
-            System.out.println(anno + " es bisiesto");
+            return anno + " es bisiesto";
         }else{
-            System.out.println(anno + " no es bisiesto");
+            return anno + " no es bisiesto";
         }
-        
-        return "";
     }
     
     public static void main(String[] args) {
